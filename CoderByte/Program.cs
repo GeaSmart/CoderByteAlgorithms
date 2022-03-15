@@ -7,7 +7,7 @@ namespace CoderByte
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FirstReverse.Run("gerson eder1"));
+            Console.WriteLine(FirstFactorial.Run(6));
         }
     }
 }
