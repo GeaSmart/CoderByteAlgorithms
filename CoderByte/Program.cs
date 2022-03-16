@@ -7,7 +7,7 @@ namespace CoderByte
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FirstFactorial.Run(6));
+            Console.WriteLine(FindIntersection.Run(new string[] { "1,2,3,4", "5,10" }));
         }
     }
 }
