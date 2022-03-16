@@ -7,7 +7,7 @@ namespace CoderByte
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FindIntersection.Run(new string[] { "1,2,3,4", "5,10" }));
+            Console.WriteLine(FindIntersection.Run2(new string[] { "1,2,3,4,5", "52,10,17,4,1,4" }));
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CoderByte.Algorithms
@@ -28,6 +30,15 @@ namespace CoderByte.Algorithms
                 return "false";
 
             return string.Join(",", lista);
+        }
+
+        public static string Run2(string[] strArr)
+        {
+            var arreglo1 = strArr[0].Split(",").ToList();
+            var arreglo2 = strArr[1].Split(",").ToList();
+
+            return arreglo1.Intersect(arreglo2).Count() > 0 ? string.Join(",", arreglo1.Intersect(arreglo2)) : "false";
+
         }
     }
 }
