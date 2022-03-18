@@ -34,5 +34,22 @@ namespace CoderByte.Algorithms
 
             return maxPalabra;
         }
+
+        public static string Run2(string texto)
+        {
+            string[] arregloPalabras = texto.Split(" ");
+            int maxCount = 0;
+            string maxWord = "";
+
+            foreach(var palabra in arregloPalabras)
+            {
+                if(palabra.Length > maxCount)
+                {
+                    maxCount = palabra.Length;
+                    maxWord = palabra;
+                }
+            }
+            return maxWord;
+        }
     }
 }

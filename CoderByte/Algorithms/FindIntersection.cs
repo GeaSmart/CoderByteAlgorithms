@@ -37,6 +37,9 @@ namespace CoderByte.Algorithms
             var arreglo1 = strArr[0].Split(",").ToList();
             var arreglo2 = strArr[1].Split(",").ToList();
 
+            string cadena = "1,2,3,4,5";
+            var array = cadena.Split(",");
+
             return arreglo1.Intersect(arreglo2).Count() > 0 ? string.Join(",", arreglo1.Intersect(arreglo2)) : "false";
 
         }
